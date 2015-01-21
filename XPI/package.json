@@ -5,7 +5,7 @@
   "description": "Pokazuje pasek 'Czytam Dla Beki' na mocno prawicowych serwisach.",
   "author": "",
   "license": "MIT",
-  "version": "1.0",
-  "icon": "icon48.png",
-  "icon64": "icon64.png"
+  "version": "1.2",
+  "icon": "Icon48.png",
+  "icon64": "Icon64.png"
 }
