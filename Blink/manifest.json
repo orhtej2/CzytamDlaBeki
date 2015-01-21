@@ -1,0 +1,24 @@
+{
+  "manifest_version": 2,
+
+  "name": "Czytam Prawicowe Strony Dla Beki",
+  "description": "Pokazuje pasek 'Czytam Dla Beki' na mocno prawicowych serwisach.",
+  "version": "1.1",
+
+  "content_scripts": [
+  {
+    "matches": ["http://niezalezna.pl/*", "http://*.niezalezna.pl/*", "http://naszeblogi.pl/*", "http://rebelya.pl/*",
+				"http://*.rebelya.pl/*", "http://salon24.pl/*", "http://*.salon24.pl/*", "http://wpolityce.pl/*",
+			    "http://*.wpolityce.pl/*", "http://nowyekran.pl/*", "http://*.nowyekran.pl/*", "http://www.pch24.pl/*",
+				"http://*.pch24.pl/*", "http://prawy.pl/*", "http://prawica.net/*", "http://fronda.pl/*",
+				"http://*.fronda.pl/*", "http://oksiuta.blog.onet.pl/*", "http://korwin-mikke.blog.onet.pl/*",
+				"http://korwin-mikke.pl/*", "http://nczas.pl/*", "http://nowaprawica.org.pl/*"],
+    "js": ["dlabeki.js"]
+  }],
+  "web_accessible_resources": [
+    "ribbon1_red_top_right.png"
+  ],
+  "icons": { "16": "Icon16.png",
+			 "48": "Icon48.png",
+			 "128": "Icon128.png" }
+}
