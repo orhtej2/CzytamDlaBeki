@@ -3,16 +3,25 @@
 
   "name": "Czytam Prawicowe Strony Dla Beki",
   "description": "Pokazuje pasek 'Czytam Dla Beki' na mocno prawicowych serwisach.",
-  "version": "1.2",
+  "version": "1.3",
 
   "content_scripts": [
   {
-    "matches": ["http://niezalezna.pl/*", "http://*.niezalezna.pl/*", "http://naszeblogi.pl/*", "http://rebelya.pl/*",
-				"http://*.rebelya.pl/*", "http://salon24.pl/*", "http://*.salon24.pl/*", "http://wpolityce.pl/*",
-			    "http://*.wpolityce.pl/*", "http://nowyekran.pl/*", "http://*.nowyekran.pl/*", "http://www.pch24.pl/*",
-				"http://*.pch24.pl/*", "http://prawy.pl/*", "http://*.prawy.pl/*", "http://prawica.net/*", "http://fronda.pl/*",
-				"http://*.fronda.pl/*", "http://oksiuta.blog.onet.pl/*", "http://korwin-mikke.blog.onet.pl/*",
-				"http://korwin-mikke.pl/*", "http://nczas.pl/*", "http://nowaprawica.org.pl/*"],
+    "matches": ["http://niezalezna.pl/*", "http://*.niezalezna.pl/*",
+				"http://naszeblogi.pl/*",
+				"http://rebelya.pl/*", "http://*.rebelya.pl/*",
+				"http://salon24.pl/*", "http://*.salon24.pl/*",
+				"http://wpolityce.pl/*", "http://*.wpolityce.pl/*",
+				"http://nowyekran.pl/*", "http://*.nowyekran.pl/*",
+				"http://www.pch24.pl/*", "http://*.pch24.pl/*",
+				"http://prawy.pl/*", "http://*.prawy.pl/*",
+				"http://prawica.net/*", "http://*.prawica.net/*",
+				"http://fronda.pl/*", "http://*.fronda.pl/*",
+				"http://oksiuta.blog.onet.pl/*", "http://korwin-mikke.blog.onet.pl/*",
+				"http://korwin-mikke.pl/*",
+				"http://*.partiakorwin.pl/*",
+				"http://takmabyc.pl/*", "http://*.takmabyc.pl/*",
+				"http://nowaprawicajkm.pl/*", "http://*.nowaprawicajkm.pl/*"],
     "js": ["dlabeki.js"]
   }],
   "web_accessible_resources": [
