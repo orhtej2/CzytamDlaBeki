@@ -2,12 +2,21 @@ var pageMod = require("sdk/page-mod");
 var data = require("sdk/self").data;
 
 pageMod.PageMod({
-  include: [ "http://niezalezna.pl/*", /http:\/\/.*\.niezalezna\.pl\/.*/, "http://naszeblogi.pl/*", "http://rebelya.pl/*",
-			 /http:\/\/.*\.rebelya\.pl\/.*/, "http://salon24.pl/*", /http:\/\/.*\.salon24\.pl\/.*/, "http://wpolityce.pl/*",
-			 /http:\/\/*.wpolityce\.pl\/.*/, "http://nowyekran.pl/*", /http:\/\/.*\.nowyekran\.pl\/.*/, "http://www.pch24.pl/*",
-			 /http:\/\/.*\.pch24\.pl\/.*/, "http://prawy.pl/*", "http://prawica.net/*", "http://fronda.pl/*",
-			 /http:\/\/.*\.fronda\.pl\/.*/, "http://oksiuta.blog.onet.pl/*", "http://korwin-mikke.blog.onet.pl/*",
-			 "http://korwin-mikke.pl/*", "http://nczas.pl/*", "http://nowaprawica.org.pl/*" ],
+  include: [ "http://niezalezna.pl/*", /http:\/\/.*\.niezalezna\.pl\/.*/,
+			 "http://naszeblogi.pl/*",
+			 "http://rebelya.pl/*", /http:\/\/.*\.rebelya\.pl\/.*/,
+			 "http://salon24.pl/*", /http:\/\/.*\.salon24\.pl\/.*/,
+			 "http://wpolityce.pl/*", /http:\/\/*.wpolityce\.pl\/.*/,
+			 "http://nowyekran.pl/*", /http:\/\/.*\.nowyekran\.pl\/.*/,
+			 "http://www.pch24.pl/*", /http:\/\/.*\.pch24\.pl\/.*/,
+			 "http://prawy.pl/*", /http:\/\/.*\.prawy\.pl\/.*/,
+			 "http://prawica.net/*", /http:\/\/.*\.prawica\.pl\/.*/,
+			 "http://fronda.pl/*", /http:\/\/.*\.fronda\.pl\/.*/,
+			 "http://oksiuta.blog.onet.pl/*", "http://korwin-mikke.blog.onet.pl/*",
+			 "http://korwin-mikke.pl/*",
+			 /http:\/\/.*\.partiakorwin\.pl\/.*/,
+			 "http://takmabyc.pl/*", /http:\/\/.*\.takmabyc\.pl\/.*/,
+			 "http://nowaprawicajkm.pl/*", /http:\/\/.*\.nowaprawicajkm\.pl\/.*/],
   contentScriptFile: "./dlabeki.js",
   attachTo: "top",
   contentScriptOptions: {
